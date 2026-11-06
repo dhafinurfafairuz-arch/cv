@@ -1,0 +1,1149 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dhafin U.F | Junior Network Technician - Portfolio & CV</title>
+  
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description" content="Website Curriculum Vitae profesional Dhafin U.F - Siswa SMK TI Garuda Nusantara Jurusan Teknik Jaringan Komputer. Terbuka untuk kesempatan magang dan kerja di bidang IT & Network Cabling.">
+  <meta name="keywords" content="Dhafin U.F, CV Dhafin, Teknik Jaringan Komputer, SMK TI Garuda Nusantara, Junior Network Technician, Portofolio IT, Kabel UTP, Network Cabling">
+  <meta name="author" content="Dhafin U.F">
+  
+  <!-- Google Fonts: Plus Jakarta Sans & Space Grotesk -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Favicon SVG (Inline Network Node) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23059669' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><circle cx='12' cy='12' r='3'/><path d='M12 2v7'/><path d='M12 15v7'/><path d='m4.93 4.93 4.95 4.95'/><path d='m14.12 14.12 4.95 4.95'/><path d='M2 12h7'/><path d='M15 12h7'/><path d='m4.93 19.07 4.95-4.95'/><path d='m14.12 9.88 4.95-4.95'/></svg>">
+</head>
+<body>
+
+  <!-- Toast Notification System -->
+  <div id="toast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-icon">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+    </div>
+    <span id="toast-message" class="toast-message">Pesan notifikasi</span>
+  </div>
+
+  <!-- NAVIGATION HEADER -->
+  <header class="site-header" id="header">
+    <div class="container header-container">
+      <a href="#hero" class="brand-logo" aria-label="Beranda Dhafin U.F">
+        <span class="logo-badge">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="8" rx="2" ry="2"/>
+            <rect x="2" y="14" width="20" height="8" rx="2" ry="2"/>
+            <line x1="6" y1="6" x2="6.01" y2="6"/>
+            <line x1="6" y1="18" x2="6.01" y2="18"/>
+          </svg>
+        </span>
+        <div class="logo-text">
+          <span class="logo-name">Dhafin U.F</span>
+          <span class="logo-sub">TKJ Specialist</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-desktop" aria-label="Navigasi Utama">
+        <ul class="nav-links">
+          <li><a href="#hero" class="nav-link active">Beranda</a></li>
+          <li><a href="#about" class="nav-link">Tentang</a></li>
+          <li><a href="#education" class="nav-link">Pendidikan</a></li>
+          <li><a href="#skills" class="nav-link">Kemampuan</a></li>
+          <li><a href="#projects" class="nav-link">Proyek Praktik</a></li>
+          <li><a href="#contact" class="nav-link">Kontak</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Action Controls -->
+      <div class="header-actions">
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle" class="btn-icon theme-btn" aria-label="Ganti mode gelap/terang" title="Ganti Mode Tampilan">
+          <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"/>
+            <line x1="12" y1="1" x2="12" y2="3"/>
+            <line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/>
+            <line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+          <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+
+        <!-- Quick Download CV in Header -->
+        <button id="quick-download-btn" class="btn btn-outline-sm btn-print hide-mobile" title="Unduh CV PDF">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+          <span>PDF CV</span>
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobile-toggle" class="btn-icon mobile-menu-btn" aria-label="Buka navigasi mobile" aria-expanded="false">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-drawer" class="mobile-drawer" aria-hidden="true">
+      <div class="mobile-drawer-content">
+        <ul class="mobile-nav-links">
+          <li><a href="#hero" class="mobile-nav-link">Beranda</a></li>
+          <li><a href="#about" class="mobile-nav-link">Tentang Saya</a></li>
+          <li><a href="#education" class="mobile-nav-link">Pendidikan</a></li>
+          <li><a href="#skills" class="mobile-nav-link">Kemampuan</a></li>
+          <li><a href="#projects" class="mobile-nav-link">Proyek Praktik</a></li>
+          <li><a href="#contact" class="mobile-nav-link">Kontak</a></li>
+        </ul>
+        <div class="mobile-drawer-cta">
+          <button class="btn btn-primary btn-full btn-print">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+              <polyline points="7 10 12 15 17 10"/>
+              <line x1="12" y1="15" x2="12" y2="3"/>
+            </svg>
+            <span>Download CV (PDF)</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. HERO SECTION -->
+    <section id="hero" class="hero-section">
+      <div class="hero-bg-decorations" aria-hidden="true">
+        <div class="hero-glow-blob blob-1"></div>
+        <div class="hero-glow-blob blob-2"></div>
+        <div class="hero-grid-pattern"></div>
+      </div>
+
+      <div class="container hero-container">
+        <div class="hero-grid">
+          
+          <!-- Hero Text Content -->
+          <div class="hero-text-content">
+            <div class="status-pill animate-fade-in">
+              <span class="status-indicator"></span>
+              <span class="status-text">Terbuka untuk Magang / PKL & Karir IT</span>
+            </div>
+
+            <h1 class="hero-title animate-fade-in delay-1">
+              Halo, Saya <br>
+              <span class="text-gradient">Dhafin U.F</span>
+            </h1>
+
+            <div class="hero-role-wrapper animate-fade-in delay-2">
+              <span class="role-badge">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="8" rx="2" ry="2"/>
+                  <rect x="2" y="14" width="20" height="8" rx="2" ry="2"/>
+                  <line x1="6" y1="6" x2="6.01" y2="6"/>
+                  <line x1="6" y1="18" x2="6.01" y2="18"/>
+                </svg>
+                Junior Network Technician
+              </span>
+              <span class="role-school">SMK TI Garuda Nusantara &bull; TKJ</span>
+            </div>
+
+            <p class="hero-description animate-fade-in delay-3">
+              Siswa Teknik Jaringan Komputer berdedikasi tinggi dengan keahlian praktis dalam terminasi kabel UTP/STP, instalasi kabel terminal/patch panel, serta konfigurasi dasar jaringan lokal (LAN). Siap berkontribusi secara profesional dengan ketelitian dan semangat kerja sama tim.
+            </p>
+
+            <!-- Hero Action Buttons -->
+            <div class="hero-cta-group animate-fade-in delay-4">
+              <button class="btn btn-primary btn-print" id="hero-download-cv">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                  <polyline points="7 10 12 15 17 10"/>
+                  <line x1="12" y1="15" x2="12" y2="3"/>
+                </svg>
+                <span>Download CV PDF</span>
+              </button>
+
+              <a href="#contact" class="btn btn-secondary">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+                <span>Contact Me</span>
+              </a>
+
+              <a href="#projects" class="btn btn-ghost">
+                <span>Lihat Praktik</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"/>
+                  <polyline points="12 5 19 12 12 19"/>
+                </svg>
+              </a>
+            </div>
+
+            <!-- Key Metric Quick Chips -->
+            <div class="hero-quick-chips animate-fade-in delay-5">
+              <div class="quick-chip">
+                <span class="chip-icon">⚡</span>
+                <span class="chip-text">Spesialisasi <strong>Kabel Twisted Pair & Terminal</strong></span>
+              </div>
+              <div class="quick-chip">
+                <span class="chip-icon">🎯</span>
+                <span class="chip-text">Target Lulus: <strong>Oktober 2026</strong></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Visual / Profile Photo Card -->
+          <div class="hero-visual-content animate-fade-in delay-2">
+            <div class="profile-frame">
+              <div class="profile-glow-ring"></div>
+              <div class="profile-circle-container">
+                <!-- Circular Avatar SVG with Professional IT Network Technician styling -->
+                <div class="profile-avatar-wrapper" id="profile-picture-container">
+                  <svg class="profile-svg-avatar" viewBox="0 0 320 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Background Gradient Circle -->
+                    <defs>
+                      <linearGradient id="bgGrad" x1="0" y1="0" x2="320" y2="320" gradientUnits="userSpaceOnUse">
+                        <stop offset="0%" stop-color="#047857"/>
+                        <stop offset="50%" stop-color="#0f172a"/>
+                        <stop offset="100%" stop-color="#064e3b"/>
+                      </linearGradient>
+                      <linearGradient id="faceGrad" x1="160" y1="90" x2="160" y2="200" gradientUnits="userSpaceOnUse">
+                        <stop offset="0%" stop-color="#f8d7b8"/>
+                        <stop offset="100%" stop-color="#e8b894"/>
+                      </linearGradient>
+                      <linearGradient id="suitGrad" x1="80" y1="210" x2="240" y2="320" gradientUnits="userSpaceOnUse">
+                        <stop offset="0%" stop-color="#1e293b"/>
+                        <stop offset="100%" stop-color="#0f172a"/>
+                      </linearGradient>
+                      <linearGradient id="emeraldAccent" x1="0" y1="0" x2="1" y2="1">
+                        <stop offset="0%" stop-color="#10b981"/>
+                        <stop offset="100%" stop-color="#059669"/>
+                      </linearGradient>
+                    </defs>
+                    
+                    <circle cx="160" cy="160" r="160" fill="url(#bgGrad)"/>
+                    
+                    <!-- Network background circuits pattern -->
+                    <path d="M40 80h80v40h40" stroke="#10b981" stroke-opacity="0.3" stroke-width="2" stroke-dasharray="4 4"/>
+                    <circle cx="40" cy="80" r="3" fill="#10b981" fill-opacity="0.5"/>
+                    <circle cx="160" cy="120" r="3" fill="#10b981" fill-opacity="0.5"/>
+                    <path d="M280 100h-60v30" stroke="#10b981" stroke-opacity="0.3" stroke-width="2" stroke-dasharray="4 4"/>
+                    <circle cx="280" cy="100" r="3" fill="#10b981" fill-opacity="0.5"/>
+                    <path d="M70 260h50v-40" stroke="#10b981" stroke-opacity="0.25" stroke-width="2"/>
+                    <path d="M250 250h-40v-30" stroke="#10b981" stroke-opacity="0.25" stroke-width="2"/>
+
+                    <!-- Body / Professional Polo Shirt -->
+                    <path d="M85 320c2-45 35-72 75-72s73 27 75 72H85z" fill="url(#suitGrad)"/>
+                    <!-- Emerald Collar / Lanyard -->
+                    <path d="M125 248l35 48 35-48-18-5h-34l-18 5z" fill="#047857"/>
+                    <path d="M142 248l18 36 18-36h-36z" fill="#10b981"/>
+                    <!-- Neck -->
+                    <rect x="144" y="190" width="32" height="34" rx="6" fill="#e2ab86"/>
+                    
+                    <!-- Head / Face -->
+                    <ellipse cx="160" cy="150" rx="44" ry="52" fill="url(#faceGrad)"/>
+                    <!-- Hair -->
+                    <path d="M116 142c-2-28 18-52 44-52 30 0 46 22 46 44 0 6-2 14-4 17-7-18-20-22-42-20-18 2-30 8-44 11z" fill="#1e293b"/>
+                    
+                    <!-- Eyes -->
+                    <ellipse cx="145" cy="148" rx="4.5" ry="5" fill="#0f172a"/>
+                    <ellipse cx="175" cy="148" rx="4.5" ry="5" fill="#0f172a"/>
+                    <circle cx="146.5" cy="146.5" r="1.5" fill="#ffffff"/>
+                    <circle cx="176.5" cy="146.5" r="1.5" fill="#ffffff"/>
+                    <!-- Eyebrows -->
+                    <path d="M137 138c4-3 12-3 16 0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round"/>
+                    <path d="M167 138c4-3 12-3 16 0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round"/>
+                    <!-- Nose -->
+                    <path d="M160 148v12h4" stroke="#d49a74" stroke-width="2" stroke-linecap="round"/>
+                    <!-- Confident Smile -->
+                    <path d="M150 172c5 5 15 5 20 0" stroke="#9a3412" stroke-width="2.5" stroke-linecap="round"/>
+
+                    <!-- Technician Headset/Badge Accent (Stylized) -->
+                    <path d="M113 148c0-26 21-47 47-47s47 21 47 47" stroke="url(#emeraldAccent)" stroke-width="3" stroke-linecap="round" fill="none"/>
+                    <rect x="111" y="142" width="6" height="16" rx="3" fill="#10b981"/>
+                    <rect x="203" y="142" width="6" height="16" rx="3" fill="#10b981"/>
+                    <!-- Mic -->
+                    <path d="M114 154c0 14 10 24 22 24h6" stroke="#10b981" stroke-width="2" stroke-linecap="round" fill="none"/>
+                    <circle cx="143" cy="178" r="3" fill="#10b981"/>
+
+                    <!-- Cable Icon in Hand / Lower corner -->
+                    <circle cx="255" cy="255" r="34" fill="#0f172a" stroke="#10b981" stroke-width="2.5"/>
+                    <path d="M245 245l20 20M265 245l-20 20" stroke="#10b981" stroke-width="3" stroke-linecap="round"/>
+                  </svg>
+                </div>
+              </div>
+
+              <!-- Floating Interactive Badges -->
+              <div class="floating-badge badge-top-right">
+                <div class="badge-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                  </svg>
+                </div>
+                <div class="badge-content">
+                  <span class="badge-title">LAN Continuity</span>
+                  <span class="badge-desc">100% Tester Verified</span>
+                </div>
+              </div>
+
+              <div class="floating-badge badge-bottom-left">
+                <div class="badge-icon emerald">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                    <circle cx="9" cy="7" r="4"/>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                  </svg>
+                </div>
+                <div class="badge-content">
+                  <span class="badge-title">Teamwork Ready</span>
+                  <span class="badge-desc">Kolaboratif & Disiplin</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Profile Caption Card -->
+            <div class="profile-card-caption">
+              <span class="caption-name">Dhafin U.F</span>
+              <span class="caption-spec">SMK TI Garuda Nusantara &bull; Angkatan 2026</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. ABOUT ME SECTION -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-eyebrow">Mengenal Lebih Dekat</span>
+          <h2 class="section-title">Tentang Saya</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="about-grid">
+          <!-- Text Story -->
+          <div class="about-narrative-card">
+            <div class="quote-icon" aria-hidden="true">“</div>
+            <p class="about-lead">
+              Saya adalah siswa <strong>SMK TI Garuda Nusantara</strong> program keahlian <strong>Teknik Jaringan Komputer (TKJ)</strong> yang memiliki passion mendalam terhadap infrastruktur teknologi informasi, perakitan kabel jaringan, dan pemeliharaan konektivitas komputer.
+            </p>
+            <p class="about-text">
+              Di lingkungan sekolah dan laboratorium kejuruan, saya terlatih secara intensif dalam melakukan instalasi fisik kabel jaringan seperti <em>Twisted Pair (UTP/STP)</em> dan terminasi <em>kabel terminal (keystone jack & patch panel)</em> dengan presisi tinggi sesuai standar industri (T568A / T568B).
+            </p>
+            <p class="about-text">
+              Saya meyakini bahwa jaringan komputer yang handal dibangun dari pondasi fisik yang rapi, terstruktur, dan bebas kesalahan (zero defect). Dengan semangat belajar yang tinggi, ketahanan kerja, serta kemampuan komunikasi tim yang solid, saya siap berkontribusi langsung dalam program magang industri maupun pekerjaan teknis IT.
+            </p>
+
+            <div class="about-signature-block">
+              <div class="sig-item">
+                <span class="sig-label">Status Akademik</span>
+                <span class="sig-value">Siswa Aktif SMK TI Garuda Nusantara</span>
+              </div>
+              <div class="sig-item">
+                <span class="sig-label">Bidang Minat</span>
+                <span class="sig-value">Network Cabling & IT Support Technician</span>
+              </div>
+              <div class="sig-item">
+                <span class="sig-label">Kesiapan Kerja</span>
+                <span class="sig-value text-emerald">Siap Magang / Kerja Lapangan</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Highlight Value Cards -->
+          <div class="about-values-grid">
+            
+            <div class="value-card">
+              <div class="value-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+              </div>
+              <div class="value-content">
+                <h3 class="value-title">Presisi & Standar Kualitas</h3>
+                <p class="value-desc">Setiap crimping kabel UTP dan terminasi patch panel dikerjakan dengan pengukuran teliti dan wajib lulus uji continuity tester 8-pin.</p>
+              </div>
+            </div>
+
+            <div class="value-card">
+              <div class="value-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                  <circle cx="9" cy="7" r="4"/>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                </svg>
+              </div>
+              <div class="value-content">
+                <h3 class="value-title">Kolaborasi & Teamwork</h3>
+                <p class="value-desc">Mampu bersinergi dengan rekan tim dalam perancangan denah pengkabelan, pembagian tugas lab, dan perbaikan perangkat jaringan.</p>
+              </div>
+            </div>
+
+            <div class="value-card">
+              <div class="value-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                </svg>
+              </div>
+              <div class="value-content">
+                <h3 class="value-title">Semangat Belajar Cepat</h3>
+                <p class="value-desc">Cepat beradaptasi dengan alat baru, dokumentasi topologi, sistem operasi jaringan, serta arahan supervisor pembimbing.</p>
+              </div>
+            </div>
+
+            <div class="value-card">
+              <div class="value-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"/>
+                  <path d="m9 12 2 2 4-4"/>
+                </svg>
+              </div>
+              <div class="value-content">
+                <h3 class="value-title">Pengalaman Praktik Nyata</h3>
+                <p class="value-desc">Terbiasa menangani troubleshooting jaringan di laboratorium sekolah mulai dari layer fisik hingga layer konektivitas IP.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 3. EDUCATION SECTION -->
+    <section id="education" class="section education-section">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-eyebrow">Latar Belakang Akademis</span>
+          <h2 class="section-title">Pendidikan</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="education-card-wrapper">
+          <div class="education-card">
+            
+            <div class="edu-badge-column">
+              <div class="edu-icon-box">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                </svg>
+              </div>
+              <span class="edu-year-tag">Target: Oktober 2026</span>
+            </div>
+
+            <div class="edu-info-column">
+              <div class="edu-header">
+                <div class="edu-title-group">
+                  <h3 class="edu-school">SMK TI Garuda Nusantara</h3>
+                  <span class="edu-major">Kompetensi Keahlian: Teknik Jaringan Komputer (TKJ)</span>
+                </div>
+                <span class="edu-status-pill">Siswa Aktif</span>
+              </div>
+
+              <p class="edu-desc">
+                Menempuh pendidikan vokasi berstandar industri dengan kurikulum berbasis praktik lapangan pada bidang rancang bangun jaringan, manajemen infrastruktur fisik kabel, instalasi sistem komputer, dan pemeliharaan perangkat jaringan lokal (LAN/WLAN).
+              </p>
+
+              <div class="edu-curriculum-block">
+                <h4 class="curriculum-title">Fokus Pembelajaran & Praktik Laboratorium:</h4>
+                <div class="curriculum-tags">
+                  <span class="tag">Instalasi Jaringan Kabel (UTP/STP)</span>
+                  <span class="tag">Pengkabelan Terminal & Patch Panel</span>
+                  <span class="tag">Standar Warna T568A & T568B</span>
+                  <span class="tag">Dasar IPv4 & Subnetting</span>
+                  <span class="tag">Topologi Bintang (Star) & Tree</span>
+                  <span class="tag">Konfigurasi Switch & Router Dasar</span>
+                  <span class="tag">Troubleshooting Konektivitas Jaringan</span>
+                  <span class="tag">Keselamatan & Kesehatan Kerja (K3) Lab</span>
+                </div>
+              </div>
+
+              <div class="edu-achievements">
+                <div class="achieve-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                  <span>Praktik Pembuatan Kabel UTP Straight & Cross dengan akurasi 100% pada LAN Tester.</span>
+                </div>
+                <div class="achieve-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                  <span>Mampu melakukan terminasi kabel terminal modular (Keystone) dan penataan rapi pada patch panel.</span>
+                </div>
+                <div class="achieve-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                  <span>Aktif berpartisipasi dalam pemeliharaan berkala infrastruktur lab komputer sekolah.</span>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 4. SKILLS SECTION -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-eyebrow">Kompetensi & Keahlian</span>
+          <h2 class="section-title">Keahlian Teknis & Soft Skills</h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">
+            Kombinasi kemampuan teknis perakitan fisik jaringan, penguasaan alat laboratorium, serta etos kerja tim yang profesional.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          
+          <!-- Skill Card 1: Teamwork -->
+          <div class="skill-card">
+            <div class="skill-header">
+              <div class="skill-icon-wrap emerald">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                  <circle cx="9" cy="7" r="4"/>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                </svg>
+              </div>
+              <span class="skill-level-badge">Soft Skill Utama</span>
+            </div>
+            <h3 class="skill-title">Teamwork (Kerja Sama Tim)</h3>
+            <p class="skill-desc">
+              Mampu berkoordinasi secara efektif dengan anggota tim dalam proyek instalasi kabel, pembagian tugas penarikan jalur kabel, serta komunikasi teknis yang jelas dan saling mendukung.
+            </p>
+            <ul class="skill-points">
+              <li>Komunikasi teknis yang santun & jelas</li>
+              <li>Kolaborasi instalasi lab jaringan sekolah</li>
+              <li>Tanggung jawab terhadap pembagian tugas</li>
+            </ul>
+          </div>
+
+          <!-- Skill Card 2: Network Cabling -->
+          <div class="skill-card featured-skill">
+            <div class="featured-indicator">Fokus Utama</div>
+            <div class="skill-header">
+              <div class="skill-icon-wrap emerald">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="8" rx="2" ry="2"/>
+                  <rect x="2" y="14" width="20" height="8" rx="2" ry="2"/>
+                  <line x1="6" y1="6" x2="6.01" y2="6"/>
+                  <line x1="6" y1="18" x2="6.01" y2="18"/>
+                </svg>
+              </div>
+              <span class="skill-level-badge">Hands-on Lab</span>
+            </div>
+            <h3 class="skill-title">Network Cabling</h3>
+            <p class="skill-desc">
+              Keahlian menyeluruh dalam manajemen pengkabelan jaringan lokal, perutean jalur kabel yang rapi (cable management), pelabelan port, serta proteksi kabel dari interferensi.
+            </p>
+            <ul class="skill-points">
+              <li>Cable Routing & Wire Management</li>
+              <li>Pelabelan Nomor Port & Switch Identification</li>
+              <li>Standar kerapihan rak server & meja kerja</li>
+            </ul>
+          </div>
+
+          <!-- Skill Card 3: Twisted Pair Cable -->
+          <div class="skill-card featured-skill">
+            <div class="featured-indicator">Fokus Utama</div>
+            <div class="skill-header">
+              <div class="skill-icon-wrap emerald">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                </svg>
+              </div>
+              <span class="skill-level-badge">High Precision</span>
+            </div>
+            <h3 class="skill-title">Twisted Pair Cable</h3>
+            <p class="skill-desc">
+              Mahir merakit kabel UTP Cat5e dan Cat6 dengan standar internasional TIA/EIA-568A dan TIA/EIA-568B untuk konfigurasi Straight-Through maupun Cross-Over dengan verifikasi LAN Tester.
+            </p>
+            <ul class="skill-points">
+              <li>Standar T568A & T568B Presisi</li>
+              <li>Kabel Straight-Through & Cross-Over</li>
+              <li>Crimping RJ-45 tanpa pin bengkok / longgar</li>
+            </ul>
+          </div>
+
+          <!-- Skill Card 4: Terminal Cabling -->
+          <div class="skill-card">
+            <div class="skill-header">
+              <div class="skill-icon-wrap">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="4" y="4" width="16" height="16" rx="2"/>
+                  <rect x="9" y="9" width="6" height="6"/>
+                  <line x1="9" y1="1" x2="9" y2="4"/>
+                  <line x1="15" y1="1" x2="15" y2="4"/>
+                  <line x1="9" y1="20" x2="9" y2="23"/>
+                  <line x1="15" y1="20" x2="15" y2="23"/>
+                  <line x1="20" y1="9" x2="23" y2="9"/>
+                  <line x1="20" y1="14" x2="23" y2="14"/>
+                  <line x1="1" y1="9" x2="4" y2="9"/>
+                  <line x1="1" y1="14" x2="4" y2="14"/>
+                </svg>
+              </div>
+              <span class="skill-level-badge">Infrastruktur</span>
+            </div>
+            <h3 class="skill-title">Kabel Terminal & Patch Panel</h3>
+            <p class="skill-desc">
+              Mampu melakukan terminasi modular jack (Keystone RJ-45) dan koneksi blok kabel terminal pada Patch Panel menggunakan Impact Punch Down Tool secara rapi dan kokoh.
+            </p>
+            <ul class="skill-points">
+              <li>Pemasangan Modular Keystone Jack RJ-45</li>
+              <li>Terminasi Patch Panel pada Rack Server</li>
+              <li>Penggunaan Impact / Punch Down Tool yang tepat</li>
+            </ul>
+          </div>
+
+          <!-- Skill Card 5: Basic Networking -->
+          <div class="skill-card">
+            <div class="skill-header">
+              <div class="skill-icon-wrap">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"/>
+                  <line x1="2" y1="12" x2="22" y2="12"/>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                </svg>
+              </div>
+              <span class="skill-level-badge">Konsep Dasar</span>
+            </div>
+            <h3 class="skill-title">Basic Networking</h3>
+            <p class="skill-desc">
+              Memahami arsitektur jaringan komputer fundamental, konsep OSI Layer, protokol TCP/IP, skema pengalamatan IPv4, Subnetting dasar (/24, dsb), serta pengujian koneksi via command line (Ping & Tracert).
+            </p>
+            <ul class="skill-points">
+              <li>Pemahaman OSI Layer & TCP/IP Model</li>
+              <li>Alokasi IP Address IPv4 (Static & DHCP)</li>
+              <li>Network Testing (Ping, Tracert, IPConfig)</li>
+            </ul>
+          </div>
+
+          <!-- Skill Card 6: Technical Tools & Work Ethic -->
+          <div class="skill-card">
+            <div class="skill-header">
+              <div class="skill-icon-wrap">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                </svg>
+              </div>
+              <span class="skill-level-badge">Peralatan & Sikap</span>
+            </div>
+            <h3 class="skill-title">Technical Skills & Alat Lab</h3>
+            <p class="skill-desc">
+              Terampil mengoperasikan perangkat perkakas jaringan di laboratorium serta didukung oleh semangat belajar yang tinggi dan antusiasme untuk memecahkan kendala teknis.
+            </p>
+            <ul class="skill-points">
+              <li>Crimping Tool RJ-45 & Wire Stripper</li>
+              <li>LAN Cable Tester & BNC/RJ11 Checking</li>
+              <li>Semangat belajar tinggi & cepat menguasai hal baru</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 5. PROJECTS / PRAKTIK SEKOLAH SECTION -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-eyebrow">Dokumentasi Portofolio</span>
+          <h2 class="section-title">Proyek & Praktik Sekolah</h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">
+            Hasil pengerjaan nyata di laboratorium kejuruan SMK TI Garuda Nusantara yang membuktikan kesiapan teknis dan ketelitian kerja.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          
+          <!-- Project 1: Praktik Kabel Twisted Pair -->
+          <article class="project-card">
+            <div class="project-card-header">
+              <div class="project-badge-group">
+                <span class="project-category">Network Cabling</span>
+                <span class="project-status-badge">100% Berhasil</span>
+              </div>
+              <div class="project-icon-top">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"/>
+                  <polyline points="8 6 2 12 8 18"/>
+                </svg>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <h3 class="project-title">Praktik Pembuatan Kabel Twisted Pair (UTP Cat5e/Cat6)</h3>
+              <p class="project-desc">
+                Melakukan pemotongan jaket kabel, penguraian dan pelurusan 8 utas kabel tembaga, penyusunan urutan kode warna standar internasional T568A dan T568B, serta crimping presisi konektor RJ-45.
+              </p>
+
+              <div class="project-specs">
+                <div class="spec-row">
+                  <span class="spec-name">Tipe Kabel:</span>
+                  <span class="spec-val">Straight-Through (PC ke Switch) & Cross-Over (PC ke PC)</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-name">Standar Warna:</span>
+                  <span class="spec-val">TIA/EIA-568A & TIA/EIA-568B</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-name">Hasil Pengujian:</span>
+                  <span class="spec-val text-emerald">Semua pin 1-8 menyala berurutan pada LAN Tester</span>
+                </div>
+              </div>
+
+              <div class="project-tags">
+                <span class="p-tag">Crimping RJ-45</span>
+                <span class="p-tag">UTP Cat6</span>
+                <span class="p-tag">T568B</span>
+                <span class="p-tag">LAN Tester</span>
+                <span class="p-tag">Physical Layer</span>
+              </div>
+            </div>
+
+            <div class="project-footer">
+              <div class="project-meta">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+                </svg>
+                <span>Praktik Lab TKJ &bull; SMK TI Garuda Nusantara</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Praktik Kabel Terminal -->
+          <article class="project-card">
+            <div class="project-card-header">
+              <div class="project-badge-group">
+                <span class="project-category">Infrastruktur Jaringan</span>
+                <span class="project-status-badge">Terverifikasi</span>
+              </div>
+              <div class="project-icon-top">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="8" rx="2" ry="2"/>
+                  <rect x="2" y="14" width="20" height="8" rx="2" ry="2"/>
+                  <line x1="6" y1="6" x2="6.01" y2="6"/>
+                  <line x1="6" y1="18" x2="6.01" y2="18"/>
+                </svg>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <h3 class="project-title">Praktik Pembuatan Kabel Terminal & Patch Panel</h3>
+              <p class="project-desc">
+                Melakukan instalasi titik konektivitas modular keystone jack dan penataan kabel terminal pada patch panel menggunakan impact punch down tool dengan kerapihan kabel rak server.
+              </p>
+
+              <div class="project-specs">
+                <div class="spec-row">
+                  <span class="spec-name">Peralatan:</span>
+                  <span class="spec-val">Punch Down Impact Tool, Keystone Jack RJ45, Patch Panel</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-name">Penataan:</span>
+                  <span class="spec-val">Cable Tie management & pelabelan nomor port terminal</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-name">Keunggulan:</span>
+                  <span class="spec-val text-emerald">Koneksi kokoh, resistansi rendah, rapi dan mudah diinspeksi</span>
+                </div>
+              </div>
+
+              <div class="project-tags">
+                <span class="p-tag">Patch Panel</span>
+                <span class="p-tag">Keystone Jack</span>
+                <span class="p-tag">Punch Down Tool</span>
+                <span class="p-tag">Rack Cable Management</span>
+              </div>
+            </div>
+
+            <div class="project-footer">
+              <div class="project-meta">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+                </svg>
+                <span>Praktik Lab TKJ &bull; SMK TI Garuda Nusantara</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Praktik Dasar Jaringan Komputer -->
+          <article class="project-card">
+            <div class="project-card-header">
+              <div class="project-badge-group">
+                <span class="project-category">LAN & Connectivity</span>
+                <span class="project-status-badge">Koneksi Sukses</span>
+              </div>
+              <div class="project-icon-top">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"/>
+                  <line x1="2" y1="12" x2="22" y2="12"/>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                </svg>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <h3 class="project-title">Praktik Dasar Jaringan Komputer & Konfigurasi LAN</h3>
+              <p class="project-desc">
+                Perancangan topologi bintang (Star Topology) menghubungkan PC workstation ke Switch, konfigurasi alamat IP Static/DHCP, uji konektivitas via ICMP (Ping), dan simulasi sharing data.
+              </p>
+
+              <div class="project-specs">
+                <div class="spec-row">
+                  <span class="spec-name">Topologi:</span>
+                  <span class="spec-val">Star Topology dengan Unmanaged Switch</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-name">Pengalamatan:</span>
+                  <span class="spec-val">IPv4 Class C Private (192.168.x.x /24)</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-name">Verifikasi:</span>
+                  <span class="spec-val text-emerald">0% Packet Loss pada Ping Test & Berbagi Folder Berhasil</span>
+                </div>
+              </div>
+
+              <div class="project-tags">
+                <span class="p-tag">Star Topology</span>
+                <span class="p-tag">IPv4 Subnetting</span>
+                <span class="p-tag">Switch Setup</span>
+                <span class="p-tag">Ping & Latency Test</span>
+                <span class="p-tag">File Sharing</span>
+              </div>
+            </div>
+
+            <div class="project-footer">
+              <div class="project-meta">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+                </svg>
+                <span>Praktik Lab TKJ &bull; SMK TI Garuda Nusantara</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 6. CONTACT SECTION -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-eyebrow">Hubungi Saya</span>
+          <h2 class="section-title">Kontak & Informasi Magang</h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">
+            Tertarik untuk mengundang Dhafin dalam program magang (PKL), proyek instalasi kabel, atau posisi entry-level IT? Silakan hubungi melalui saluran di bawah ini.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Contact Channels Info Cards -->
+          <div class="contact-info-column">
+            
+            <div class="contact-card">
+              <div class="contact-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
+              </div>
+              <div class="contact-details">
+                <span class="contact-label">Email Resmi</span>
+                <a href="mailto:dhafin.uf@example.com" class="contact-value" id="contact-email">dhafin.uf@example.com</a>
+                <span class="contact-hint">Klik untuk mengirim email langsung</span>
+              </div>
+              <button class="btn-copy" data-copy="dhafin.uf@example.com" title="Salin Email" aria-label="Salin alamat email">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+              </button>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon whatsapp">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+                </svg>
+              </div>
+              <div class="contact-details">
+                <span class="contact-label">WhatsApp</span>
+                <a href="https://wa.me/6281200000000" target="_blank" rel="noopener noreferrer" class="contact-value" id="contact-wa">+62 8xx-xxxx-xxxx</a>
+                <span class="contact-hint">Hubungi via pesan WhatsApp</span>
+              </div>
+              <button class="btn-copy" data-copy="+62 8xx-xxxx-xxxx" title="Salin Nomor WhatsApp" aria-label="Salin nomor WhatsApp">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+              </button>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+              </div>
+              <div class="contact-details">
+                <span class="contact-label">Lokasi Sekolah & Domisili</span>
+                <span class="contact-value" id="contact-location">Indonesia</span>
+                <span class="contact-hint">SMK TI Garuda Nusantara &bull; Jurusan TKJ</span>
+              </div>
+            </div>
+
+            <!-- Download CV Reminder Box -->
+            <div class="download-cv-box">
+              <div class="download-cv-box-header">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                  <polyline points="14 2 14 8 20 8"/>
+                  <line x1="16" y1="13" x2="8" y2="13"/>
+                  <line x1="16" y1="17" x2="8" y2="17"/>
+                  <polyline points="10 9 9 9 8 9"/>
+                </svg>
+                <h4>Butuh Dokumen CV Siap Cetak?</h4>
+              </div>
+              <p>Simpan atau cetak berkas CV ini dalam format PDF resmi berukuran standar A4 yang dirancang khusus untuk rekruter.</p>
+              <button class="btn btn-primary btn-full btn-print">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                  <polyline points="7 10 12 15 17 10"/>
+                  <line x1="12" y1="15" x2="12" y2="3"/>
+                </svg>
+                <span>Unduh CV PDF Sekarang</span>
+              </button>
+            </div>
+
+          </div>
+
+          <!-- Quick Message Form -->
+          <div class="contact-form-column">
+            <div class="form-wrapper">
+              <h3 class="form-title">Kirim Pesan / Tawaran Magang</h3>
+              <p class="form-subtitle">Formulir ini dapat langsung menghubungkan Anda ke WhatsApp atau membuka draft email resmi.</p>
+
+              <form id="contact-form" class="interactive-form">
+                <div class="form-group">
+                  <label for="sender-name">Nama Lengkap / Instansi <span class="required">*</span></label>
+                  <input type="text" id="sender-name" name="name" required placeholder="Contoh: Budi Santoso (PT Solusi Jaringan)">
+                </div>
+
+                <div class="form-group">
+                  <label for="sender-contact">Email / No. WhatsApp Anda <span class="required">*</span></label>
+                  <input type="text" id="sender-contact" name="contact" required placeholder="Contoh: budi@perusahaan.com / 08123456789">
+                </div>
+
+                <div class="form-group">
+                  <label for="message-subject">Perihal <span class="required">*</span></label>
+                  <select id="message-subject" name="subject" required>
+                    <option value="" disabled selected>Pilih keperluan...</option>
+                    <option value="Tawaran Magang / PKL">Tawaran Magang / PKL</option>
+                    <option value="Peluang Kerja Junior Network Technician">Peluang Kerja Junior Network Technician</option>
+                    <option value="Proyek Instalasi Jaringan & Kabel">Proyek Instalasi Jaringan & Kabel</option>
+                    <option value="Pertanyaan Umum / Diskusi">Pertanyaan Umum / Diskusi</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="sender-message">Isi Pesan <span class="required">*</span></label>
+                  <textarea id="sender-message" name="message" rows="4" required placeholder="Tuliskan pesan, rincian lokasi magang, atau informasi yang ingin disampaikan..."></textarea>
+                </div>
+
+                <div class="form-actions-dual">
+                  <button type="button" id="btn-send-wa" class="btn btn-wa-send">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+                    </svg>
+                    <span>Kirim via WhatsApp</span>
+                  </button>
+
+                  <button type="submit" id="btn-send-email" class="btn btn-primary">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="22" y1="2" x2="11" y2="13"/>
+                      <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                    </svg>
+                    <span>Kirim via Email</span>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- PRINT-ONLY DEDICATED CV CONTAINER -->
+  <!-- This hidden-on-screen element renders the flawless executive 1-2 page A4 CV when printing or saving as PDF -->
+  <div id="print-cv-container" class="print-only-layout" aria-hidden="true">
+    <div class="print-header">
+      <div class="print-header-main">
+        <h1 class="print-name">DHAFIN U.F</h1>
+        <h2 class="print-role">JUNIOR NETWORK TECHNICIAN</h2>
+        <p class="print-tagline">Siswa Teknik Jaringan Komputer &bull; SMK TI Garuda Nusantara</p>
+      </div>
+      <div class="print-contacts">
+        <div><strong>Email:</strong> dhafin.uf@example.com</div>
+        <div><strong>WhatsApp:</strong> +62 8xx-xxxx-xxxx</div>
+        <div><strong>Lokasi:</strong> Indonesia</div>
+        <div><strong>Target Lulus:</strong> Oktober 2026</div>
+      </div>
+    </div>
+
+    <div class="print-section">
+      <h3 class="print-sec-title">RINGKASAN PROFESIONAL</h3>
+      <p class="print-p">
+        Siswa Teknik Jaringan Komputer berdedikasi dari SMK TI Garuda Nusantara dengan penguasaan praktis dalam perakitan kabel twisted pair (UTP/STP Cat5e & Cat6) standar T568A/T568B, terminasi kabel terminal (patch panel & modular keystone jack), serta konfigurasi dan pengujian jaringan lokal (LAN). Memiliki disiplin tinggi, presisi kerja bebas galat, etos kerja tim yang solid, serta antusiasme belajar tinggi untuk siap berkontribusi pada industri IT.
+      </p>
+    </div>
+
+    <div class="print-section">
+      <h3 class="print-sec-title">PENDIDIKAN</h3>
+      <div class="print-item">
+        <div class="print-item-head">
+          <span class="print-item-title">SMK TI Garuda Nusantara</span>
+          <span class="print-item-date">2024 &ndash; Oktober 2026</span>
+        </div>
+        <div class="print-item-sub">Kompetensi Keahlian: Teknik Jaringan Komputer (TKJ)</div>
+        <ul class="print-list">
+          <li>Fokus kejuruan: Pengkabelan Jaringan UTP/STP, Terminasi Terminal & Patch Panel, Topologi LAN, IPv4 Subnetting, dan Switch Setup.</li>
+          <li>Uji praktik crimping dan continuity LAN tester 8-pin dengan akurasi 100%.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="print-section">
+      <h3 class="print-sec-title">KOMPETENSI & KEAHLIAN TEKNIS</h3>
+      <div class="print-grid-skills">
+        <div>
+          <strong>Keahlian Teknis Jaringan:</strong>
+          <ul>
+            <li>Pembuatan Kabel Twisted Pair (UTP Cat5e/Cat6)</li>
+            <li>Standar Crimping TIA/EIA-568A & TIA/EIA-568B</li>
+            <li>Kabel Straight-Through & Cross-Over</li>
+            <li>Terminasi Kabel Terminal & Keystone Jack</li>
+            <li>Pemasangan & Manajemen Patch Panel</li>
+            <li>Pengujian LAN Cable Tester (Continuity Test)</li>
+          </ul>
+        </div>
+        <div>
+          <strong>Konsep Jaringan & Soft Skills:</strong>
+          <ul>
+            <li>Dasar Jaringan Komputer, Model OSI & TCP/IP</li>
+            <li>Alokasi IPv4 & Subnet Mask Dasar (/24)</li>
+            <li>Topologi Star & LAN Troubleshooting (Ping Test)</li>
+            <li>Kemampuan Teamwork & Kolaborasi Lab</li>
+            <li>Semangat Belajar Tinggi & Cepat Beradaptasi</li>
+            <li>Disiplin & Keselamatan Kerja Laboratorium</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="print-section">
+      <h3 class="print-sec-title">PENGALAMAN PROYEK & PRAKTIK KEJURUAN</h3>
+      <div class="print-item">
+        <div class="print-item-head">
+          <span class="print-item-title">Praktik Pembuatan Kabel Twisted Pair (UTP Cat5e/Cat6)</span>
+          <span class="print-item-date">Lab TKJ</span>
+        </div>
+        <ul class="print-list">
+          <li>Melakukan pemotongan, stripping, pelurusan urutan warna pinout T568A & T568B, dan crimping konektor RJ-45 secara presisi.</li>
+          <li>Menguji kabel straight & cross menggunakan LAN Cable Tester dengan hasil continuity 100% aktif tanpa short circuit.</li>
+        </ul>
+      </div>
+
+      <div class="print-item">
+        <div class="print-item-head">
+          <span class="print-item-title">Praktik Pembuatan Kabel Terminal & Patch Panel</span>
+          <span class="print-item-date">Lab TKJ</span>
+        </div>
+        <ul class="print-list">
+          <li>Melakukan terminasi kabel modular keystone jack dan terminal blok patch panel menggunakan Impact Punch Down Tool.</li>
+          <li>Mengaplikasikan cable management (cable tie & numbering) untuk menjaga kerapihan rak server dan mempermudah pemeliharaan jalur.</li>
+        </ul>
+      </div>
+
+      <div class="print-item">
+        <div class="print-item-head">
+          <span class="print-item-title">Praktik Dasar Jaringan Komputer & Konfigurasi LAN</span>
+          <span class="print-item-date">Lab TKJ</span>
+        </div>
+        <ul class="print-list">
+          <li>Merancang skema topologi bintang menghubungkan stasiun kerja komputer ke Switch unmanaged.</li>
+          <li>Melakukan konfigurasi IP Address static pada sistem operasi workstation serta verifikasi kelancaran paket dengan ping test (0% packet loss).</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <div class="footer-logo">
+          <span class="footer-dot"></span>
+          <strong>Dhafin U.F</strong> &bull; Junior Network Technician
+        </div>
+        <p class="footer-copy">
+          Siswa SMK TI Garuda Nusantara &bull; Jurusan Teknik Jaringan Komputer
+        </p>
+      </div>
+
+      <div class="footer-center">
+        <button class="btn btn-outline-sm btn-print" title="Cetak atau simpan CV ke PDF">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+          <span>Download CV PDF</span>
+        </button>
+      </div>
+
+      <div class="footer-right">
+        <p class="footer-year">&copy; 2026 Dhafin U.F. Hak Cipta Dilindungi.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button id="back-to-top" class="back-to-top-btn" aria-label="Kembali ke atas" title="Kembali ke atas">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"/>
+    </svg>
+  </button>
+
+  <!-- JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
